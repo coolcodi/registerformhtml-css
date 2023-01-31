@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form</title>
+    <style>
+        body{
+            background: linear-gradient(to right ,rgb(215, 183, 163),rgb(137, 116, 196),rgb(228, 154, 168));
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+
+        }
+        
+        form{
+            height: 1100px;
+            width: 600px;
+            margin: auto;
+            line-height: 34px;
+          
+        }
+        .title-div{
+            height: 180px;
+            width: 500px;
+            background-color: aliceblue;
+            box-shadow: 2px 4px 3px 4px rgb(45, 42, 42);
+
+            margin: 15px;
+            border-radius: 10px;
+            border-top: 15px solid blue;
+            padding:  2px 23px;
+        }
+        .required{
+            font-size:large ;
+            color: red;
+
+            
+        }
+        .div1{
+            height: 150px;
+            width: 500px;
+            background-color: aliceblue;
+            margin: 15px;
+            padding: 2px 23px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 3px 4px rgb(45, 42, 42);
+        }
+        .div1:hover{
+            background: linear-gradient(to right ,rgb(224, 187, 220),rgb(212, 204, 234),rgb(224, 176, 239));
+
+        }
+        .name{
+            margin: 12px;
+           
+        }
+        .input-div{
+            padding: 12px;
+        }
+        .a2{
+
+            width: 300px;
+            border: 0;
+           
+            padding-bottom: 6px;
+            border-bottom: solid 2px gray;
+            background-color: aliceblue;
+        }
+        ::placeholder{
+            text-transform: capitalize;
+        }
+        .a1{
+           position:absolute;
+           margin-left: 14px;
+           margin-top: 12px;
+           text-align: center;
+            border-radius: 2px;
+            box-shadow: 2px 3px 2px 2px rgb(74, 71, 71);
+            border: 1px solid black;
+            text-transform: capitalize;
+            background-color: rgb(37, 31, 207);
+            width: 100px;
+            color: aliceblue;
+        }
+        .a3{
+            position:absolute;
+            margin-left: 189px;
+            margin-top: -20px;
+            background-color: rgb(37, 31, 207);
+            text-align: center;
+            border-radius: 2px;
+            box-shadow: 2px 3px 2px 2px rgb(75, 73, 73);
+            border: 1px solid black;
+            text-transform: capitalize;
+            width: 100px;
+            color: aliceblue;
+        }
+        .a1:hover,.a3:hover{
+            background: linear-gradient(to right ,rgb(224, 187, 220),rgb(212, 204, 234),rgb(224, 176, 239));
+            width: 120px;
+            height: 34px;
+            color: black;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    
+      <form action="/action_page.php" method="get">
+        <div class="title-div">
+            <h1>ragister form</h1>
+            <p>this is a ragister form in web page only html and css basic</p>
+            <p class="required">*required</p>
+        </div>
+        <div class="div1">
+            <div class="name">enter your name<span class="required">*</span></div>
+            <div class="input-div"><input class="a2" type="text" placeholder="enter your your name" required></div>
+        </div>
+        <div class="div1">
+            <div class="name"><label for="name"> enter your email</label><span class="required">*</div>
+            <div class="input-div"><input class="a2" type="email" id="name" name="email" placeholder="enter your your email" required></div>
+        </div>
+        <div class="div1">
+            <div class="name">enter your mobille number required<span class="required">*</div>
+            <div class="input-div"><input class="a2" type="number" placeholder="enter your your" required></div>
+        </div>
+        <div>
+            <div ><button type="button"  class="a1" onclick="alert('succesfully inserted!')">submit </div> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            <div ><button type="reset"   class="a3" onclick="alert('reset!')"> reset</div>
+
+        </div>
+       
+        
+        
+      </form>
+ 
+</body>
+</html>
